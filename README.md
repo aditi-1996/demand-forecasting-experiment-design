@@ -42,6 +42,29 @@ Citi Bike's biggest operational challenge is **rebalancing** — bikes pile up a
 
 ---
 
+## Results at a Glance
+
+### EDA — Demand Heatmap (Hour × Day of Week)
+![Demand heatmap](images/01_demand_heatmap_hourday.png)
+
+### Clustering — Station Demand Profiles (K-means K=4)
+![Cluster profiles](images/02_cluster_profiles_grid.png)
+
+### Forecasting — Model Comparison (MAPE by Cluster)
+![Model comparison](images/03_mape_comparison_bar.png)
+
+### Anomaly Detection — Isolation Forest on Daily Demand
+![Isolation Forest](images/04_isolation_forest_ts.png)
+
+### A/B Test Design — Power Curve & Sequential Test
+![Power curve](images/05_power_curve.png)
+![Sequential test](images/05_sequential_test_line.png)
+
+### Geospatial — Demand Decay with Distance from Midtown
+![Demand vs distance](images/06_demand_vs_distance_scatter.png)
+
+---
+
 ## Setup
 
 ### 1. Clone the repo

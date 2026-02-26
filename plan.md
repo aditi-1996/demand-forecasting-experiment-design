@@ -43,9 +43,10 @@ Citi Bike's biggest operational problem is **rebalancing** — bikes pile up at 
 - [x] Model comparison (MAE, RMSE, MAPE per station cluster)
 
 ### Phase 4 — Anomaly Detection
-- [ ] Flag unusual demand spikes (events, weather, outages)
-- [ ] Isolation Forest on residuals
-- [ ] Z-score / IQR flagging per station-hour
+- [x] Flag unusual demand spikes (events, weather, outages)
+- [x] Isolation Forest on multivariate feature matrix
+- [x] Z-score / IQR flagging per station-hour
+- [x] Consensus anomaly labels saved for Phase 5
 
 ### Phase 5 — A/B Test Design & Simulation
 - [ ] Define treatment: ML-optimized rebalancing schedule vs current heuristic
@@ -72,7 +73,7 @@ Citi Bike's biggest operational problem is **rebalancing** — bikes pile up at 
 ## Current Status
 
 **Date started:** 2026-02-25
-**Current phase:** Phase 3 — Forecasting (notebook built, ready to run)
+**Current phase:** Phase 4 — Anomaly Detection (notebook built, ready to run)
 **Branch:** `feature/project-setup`
 
 ---

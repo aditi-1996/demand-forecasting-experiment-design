@@ -49,14 +49,14 @@ Citi Bike's biggest operational problem is **rebalancing** — bikes pile up at 
 - [x] Consensus anomaly labels saved for Phase 5
 
 ### Phase 5 — A/B Test Design & Simulation
-- [ ] Define treatment: ML-optimized rebalancing schedule vs current heuristic
-- [ ] Unit of randomization: station cluster (cluster-level A/B)
-- [ ] Power analysis — minimum detectable effect, required sample size
-- [ ] Simulate A/B test outcomes (synthetic control data)
-- [ ] Frequentist analysis (t-test, Mann-Whitney U)
-- [ ] Sequential testing (alpha spending / group sequential)
-- [ ] Bayesian A/B test (PyMC, posterior on uplift)
-- [ ] Measure: dock availability rate, ride wait time, revenue per station
+- [x] Define treatment: ML-optimized rebalancing schedule vs current heuristic
+- [x] Unit of randomization: station cluster (cluster-level A/B)
+- [x] Power analysis — minimum detectable effect, required sample size
+- [x] Simulate A/B test outcomes (synthetic control data)
+- [x] Frequentist analysis (t-test, Mann-Whitney U)
+- [x] Sequential testing (O'Brien-Fleming alpha spending)
+- [x] Bayesian A/B test (PyMC, posterior on uplift + 95% HDI)
+- [x] Primary metric: dock availability rate
 
 ### Phase 6 — Geospatial Analysis
 - [ ] Spatial features: distance to subway, population density, POIs
@@ -73,7 +73,7 @@ Citi Bike's biggest operational problem is **rebalancing** — bikes pile up at 
 ## Current Status
 
 **Date started:** 2026-02-25
-**Current phase:** Phase 4 — Anomaly Detection (notebook built, ready to run)
+**Current phase:** Phase 5 — A/B Testing (notebook built, ready to run)
 **Branch:** `feature/project-setup`
 
 ---

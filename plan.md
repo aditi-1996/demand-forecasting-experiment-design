@@ -31,10 +31,10 @@ Citi Bike's biggest operational problem is **rebalancing** — bikes pile up at 
 - [x] Initial EDA notebook (`notebooks/01_eda.ipynb`)
 
 ### Phase 2 — Station Clustering & Segmentation
-- [ ] Feature engineering per station (hourly demand patterns, location)
-- [ ] K-means clustering → commuter / tourist / recreational segments
-- [ ] DBSCAN for geospatial density clustering
-- [ ] Visualize on Folium map
+- [x] Feature engineering per station (hourly demand patterns, location)
+- [x] K-means clustering → commuter / tourist / recreational segments
+- [x] DBSCAN for geospatial density clustering
+- [x] Visualize on Folium map
 
 ### Phase 3 — Demand Forecasting
 - [ ] Build Prophet model (station-level, hourly)
@@ -72,7 +72,7 @@ Citi Bike's biggest operational problem is **rebalancing** — bikes pile up at 
 ## Current Status
 
 **Date started:** 2026-02-25
-**Current phase:** Phase 1 — Setup
+**Current phase:** Phase 2 — Clustering (notebook built, ready to run)
 **Branch:** `feature/project-setup`
 
 ---

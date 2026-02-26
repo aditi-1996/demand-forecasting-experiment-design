@@ -26,9 +26,9 @@ Citi Bike's biggest operational problem is **rebalancing** — bikes pile up at 
 ## Project Phases
 
 ### Phase 1 — Setup & Data Acquisition
-- [ ] Project scaffold (directories, requirements, .gitignore)
-- [ ] Download Citi Bike trip data (publicly available via S3)
-- [ ] Initial EDA notebook
+- [x] Project scaffold (directories, requirements, .gitignore)
+- [x] Download Citi Bike trip data — Jan–Mar 2024 (202401/02/03-citibike-tripdata.zip)
+- [x] Initial EDA notebook (`notebooks/01_eda.ipynb`)
 
 ### Phase 2 — Station Clustering & Segmentation
 - [ ] Feature engineering per station (hourly demand patterns, location)
@@ -81,7 +81,8 @@ Citi Bike's biggest operational problem is **rebalancing** — bikes pile up at 
 
 | Commit | What |
 |---|---|
-| (pending) | Initial scaffold — project structure, plan.md, requirements |
+| feat: initial project scaffold | Initial scaffold — project structure, plan.md, requirements |
+| (pending) | Fix S3 URL, updated preprocess.py for zip format, EDA notebook |
 
 ---
 
@@ -89,12 +90,12 @@ Citi Bike's biggest operational problem is **rebalancing** — bikes pile up at 
 
 > This section is updated as we hit problems. Every hurdle is documented with root cause + solution so future work doesn't repeat the same debugging.
 
-### H001 — (template)
-**Date:**
-**Problem:**
-**Root cause:**
-**Solution:**
-**Files affected:**
+### H001 — Citi Bike S3 URL format changed
+**Date:** 2026-02-25
+**Problem:** `https://s3.amazonaws.com/tripdata/202301-citibike-tripdata.csv.zip` returns 404
+**Root cause:** Citi Bike restructured their S3 bucket. 2020–2023 data is now in annual bundles (`YYYY-citibike-tripdata.zip`). 2024+ reverted to monthly but with `.zip` extension (not `.csv.zip`).
+**Solution:** Use `YYYYMM-citibike-tripdata.zip` format for 2024+ monthly data. We use 2024 data going forward.
+**Files affected:** `src/data/download.py`
 
 ---
 

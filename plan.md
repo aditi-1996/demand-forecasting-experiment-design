@@ -37,10 +37,10 @@ Citi Bike's biggest operational problem is **rebalancing** — bikes pile up at 
 - [x] Visualize on Folium map
 
 ### Phase 3 — Demand Forecasting
-- [ ] Build Prophet model (station-level, hourly)
-- [ ] Build ARIMA baseline
-- [ ] Build XGBoost with lag features + weather + calendar features
-- [ ] Model comparison (MAE, RMSE, MAPE per station cluster)
+- [x] Build Prophet model (station-level, hourly)
+- [x] Build ARIMA baseline (SARIMA with seasonal 24h component)
+- [x] Build XGBoost with lag features + calendar features
+- [x] Model comparison (MAE, RMSE, MAPE per station cluster)
 
 ### Phase 4 — Anomaly Detection
 - [ ] Flag unusual demand spikes (events, weather, outages)
@@ -72,7 +72,7 @@ Citi Bike's biggest operational problem is **rebalancing** — bikes pile up at 
 ## Current Status
 
 **Date started:** 2026-02-25
-**Current phase:** Phase 2 — Clustering (notebook built, ready to run)
+**Current phase:** Phase 3 — Forecasting (notebook built, ready to run)
 **Branch:** `feature/project-setup`
 
 ---
